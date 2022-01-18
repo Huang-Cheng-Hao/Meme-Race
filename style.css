@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-image: url("meme_background.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    font-family:Arial, Helvetica, sans-serif;
+}
+p,h3,h2,td,th {
+    color: white;
+}
+td {
+    font-size: larger;
+}
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: snow;
+}
+#startbutton {
+    position: absolute;
+    font-size: 2vw;
+    width: 300px;
+    height: 100px;
+    top: 70%;
+    right:40%;
+    mix-blend-mode: screen;
+}
+#block, #block1 {
+    text-align: center;
+    width: 33%;
+    border-style: solid;
+    float: left;
+    background-color: rgba(100%,100%,100%,0.4); /*20%白色*/
+    padding: 15px;
+}
+button {
+    font-size: larger;
+    width: 100px;
+    height: 60px;
+}
+table {
+    text-align: center;
+}
+tr:hover {
+    background-color:black;
+}
+#StartScreen img:hover {
+    border-color: snow;
+    border-style: solid;
+    box-sizing: border-box;
+}
+#StartScreen img:focus {
+    outline: 4px solid red;
+}
+#easy:focus,#normal:focus,#hard:focus {
+    outline: 3px solid red;
+}
+#container{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#road{
+    display: inline-block;
+    background-color: rgba(51, 51, 51, 0.9);
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+#character{
+    position: absolute;
+    bottom: 0%;
+    width: 150px;
+    /* height: 200px; */
+    background:none;
+}
+.block{
+    position: absolute;
+    top:-150px;
+    /* border: white 1px solid; */
+    width: 100px;
+    /* height: 100px; */
+    background:none;
+    /* animation: block 3.5s infinite linear; */
+}
+#block_1{
+    animation-delay: 0ms;
+}
+#block_2{
+    animation-delay: 350ms;
+}
+#block_3{
+    animation-delay: 700ms;
+}
+.line{
+    width: 50px;
+    height: 250px;
+    background-color: rgba( 256, 256, 256, 0.9);
+    position: absolute;
+    top:-250px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#score{
+    
+    position: absolute;
+    background: white;
+    margin-top: 20%;
+    margin-left: 10%;
+    -webkit-box-shadow: 4px 4px 4px 1px #808080;
+    box-shadow: 4px 4px 4px 1px #808080;
+}
+#score p{
+    
+    font-size: 25px;
+    color: black;
+
+}
+
+#line_1{
+    
+    animation: line 2000ms infinite linear;
+    
+}
+#line_2{
+    
+    animation: line 2000ms infinite linear;
+    animation-delay: 500ms;
+}
+#line_3{
+    
+    animation: line 2000ms infinite linear;
+    animation-delay: 1000ms;
+}
+#line_4{
+    animation: line 2000ms infinite linear;
+    animation-delay: 1500ms;
+}
+@keyframes line {
+    0%{top:  -250px;}
+    100%{top: 150%;}
+}
+@keyframes block{
+    0%{top:  -200px;}
+    100%{top: 100%;}
+}

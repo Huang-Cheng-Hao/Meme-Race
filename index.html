@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2D迷因賽車</title>
+        
+        <link rel = "stylesheet" href = "style.css">
+
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <audio id = "bgm" src = "" loop></audio>
+        <audio id = "over" src = "" ></audio>
+        <div id = "container">
+            <div id = "score">
+                <p>score:<span id = "scoreCount">0</span></p>
+            </div>
+            <div id = "road">
+                <div class = "line" id="line_1"></div>
+                <div class="line" id="line_2"></div>
+                <div class="line" id="line_3"></div>
+                <div class="line" id="line_4"></div>
+                <img id="character" src = "">
+                <img class="block" id = "block_1" src = "">
+                <img class="block" id = "block_2" src = "">
+                <img class="block" id = "block_3" src = "">
+            </div>
+        </div>
+        <div id = "StartScreen"><br>
+        <h1>2D迷因賽車</h1><br>
+        <div class="top-10" id="block1">
+            <h2>排行榜</h2>
+           <table style="width: 100%;">
+                <thead>
+                    <th>排名</th>
+                    <th>名稱</th>
+                    <th>分數</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td id="name1">Anderson</td>
+                        <td id="score1">2500</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td id="name2">Chris</td>
+                        <td id="score2">2350</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td id="name3">Jack</td>
+                        <td id="score3">1240</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td id="name4">Tony</td>
+                        <td id="score4">1755</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td id="name5">Peter</td>
+                        <td id="score5">1890</td>
+                    <tr>
+                        <td>6</td>
+                        <td id="name6">Steven</td>
+                        <td id="score6">1100</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td id="name7">Berry</td>
+                        <td id="score7">999</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td id="name8">Clark</td>
+                        <td id="score8">750</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td id="name9">Bruce</td>
+                        <td id="score9">680</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td id="name10">Diana</td>
+                        <td id="score10">120</td>
+                    </tr>
+                </tbody>
+           </table>
+        </div>
+        <div id="block">
+            <h3>操控方式</h3><br>
+            <img src = "keyboard.jpg" style = "width: 100px;">
+            <br><br>
+            <h3>難易度</h3><br>
+            <button id="easy"   onclick="difficulity(0)">簡單</button>
+            <button id="normal" onclick="difficulity(1)">普通</button>
+            <button id="hard"   onclick="difficulity(2)">困難</button>
+        </div>
+       
+        <div id="block">
+            <h3>角色</h3><br>
+            <img src="blackman.jpg" style="width: 150px;" id="blackman" onclick="setback(1)" tabindex="0">
+            <img src="hotpot.png" style="width: 150px;" id="hotpot" onclick="setback(3)" tabindex="0"><br>
+            <img src="milos.png" style="width: 150px;" id="milos" onclick="setback(0)" tabindex="0">
+            <img src="squidgame.jpeg" style="width: 150px;" id="squidgame" onclick="setback(2)" tabindex="0">
+            <img src="">
+        </div>
+        <a id="startbutton" href="網程期末專案.pptx" style="color: white; text-align: center; text-decoration: none;">[ 說明文件 ]</a>
+        
+        </div>
+
+        
+
+
+        <script>
+            loadSearches();
+        </script>
+    </body>
+
+</html>
